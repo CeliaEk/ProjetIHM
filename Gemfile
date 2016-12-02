@@ -33,6 +33,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap', '~> 4.0.0.alpha5'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'autoprefixer-rails'
+gem 'rails_bootstrap_navbar'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
