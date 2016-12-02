@@ -45,8 +45,6 @@ GEM
     bootstrap (4.0.0.alpha5)
       autoprefixer-rails (>= 6.0.3)
       sass (>= 3.4.19)
-    bootstrap-navbar (2.3.0)
-      gem_config (~> 0.3)
     builder (3.2.2)
     byebug (9.0.6)
     coffee-rails (4.2.1)
@@ -61,7 +59,6 @@ GEM
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.9.14)
-    gem_config (0.3.1)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
@@ -111,9 +108,6 @@ GEM
       nokogiri (~> 1.6.0)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
-    rails_bootstrap_navbar (2.0.1)
-      bootstrap-navbar (~> 2.0)
-      rails (>= 3.0.0)
     railties (5.0.0.1)
       actionpack (= 5.0.0.1)
       activesupport (= 5.0.0.1)
@@ -177,7 +171,6 @@ DEPENDENCIES
   puma (~> 3.0)
   rails (~> 5.0.0, >= 5.0.0.1)
   rails-assets-tether (>= 1.1.0)!
-  rails_bootstrap_navbar
   sass-rails (~> 5.0)
   spring
   spring-watcher-listen (~> 2.0.0)
