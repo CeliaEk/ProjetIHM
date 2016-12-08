@@ -1,0 +1,112 @@
+// Place all the styles related to the creation_offre controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.tete {
+  height: 700px;
+  background-image: url(<%= asset_path 'desk.jpg' %>);
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-size:  cover;
+}
+
+.container {
+  color: black;
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 80px;
+}
+
+.container .section-header{
+  text-align: center;
+}
+
+.container .section-header .formulaire{
+  margin-left: 30%;
+  margin-top: 100px;
+  width: 40%;
+}
+
+/* enable absolute positioning */
+.container .section-header .formulaire .inner-addon {
+  position: relative;
+}
+
+/* style icon */
+.container .section-header .formulaire .inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+.container .section-header .formulaire .left-addon .glyphicon  { left:  0px;}
+
+/* add padding  */
+.container .section-header .formulaire .left-addon input  { padding-left:  30px; }
+
+.suiv {
+  height: 500px;
+  color: black;
+}
+
+.suiv .container .text-justify {
+  width: 25%;
+  height: 20%;
+  float: right;
+  color: black;
+  margin-right: 20%;
+  margin-top: 10%;
+}
+
+.suiv .container img{
+  margin-top: 8%;
+  margin-left: 5%;
+  float: left;
+  width: 40%;
+  height: 60%;
+}
+
+.suiv .container {
+  padding-left: 0%;
+  padding-right: 0%;
+  padding-top: 0px;
+}
+
+.suivant {
+  height: 550px;
+  background-color: deepskyblue;
+  color: black;
+}
+
+.suivant .container {
+  color: black;
+
+}
+
+.suivant h3 {
+  text-align: center;
+}
+
+.suivant .formulaire-suiv {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.suivant .formulaire-suiv textarea {
+   margin-top: 20px;
+  text-align: left;
+  width:60%;
+  margin-left:20%;
+  margin-right:20%;
+ }
+
+.suivant .formulaire-suiv button {
+  margin-top: 20px;
+}
+
+
+.suivant .formulaire-suiv label {
+  text-align: left;
+}

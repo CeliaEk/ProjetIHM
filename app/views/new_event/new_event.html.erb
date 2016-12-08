@@ -1,0 +1,113 @@
+<%=  stylesheet_link_tag 'new_event'%>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<section class="tete">
+  <div class="container">
+    <div class="section-header">
+
+      <h3>Bienvenue sur la page de création d'évènement de Codersnet !</h3>
+
+      <form class="formulaire">
+        <div class="form-group inner-addon left-addon">
+          <i class="glyphicons glyphicons-briefcase"></i>
+          <label class="sr-only" for="poste">Poste</label>
+          <input type="text" class="form-control" id="poste" placeholder="Titre de l'évènement">
+        </div>
+        <div class="form-group inner-addon left-addon">
+          <i class="glyphicons glyphicons-building"></i>
+          <label class="sr-only" for="toto">Poste</label>
+          <input type="text" class="form-control" id="toto" placeholder="Lieux">
+        </div>
+        <div class="form-group inner-addon left-addon">
+          <i class="glyphicons glyphicons-building"></i>
+          <label class="sr-only" for="toto">Poste</label>
+          <input type="text" class="form-control" id="toto" placeholder="Organisé par ">
+        </div>
+        <div class="form-group inner-addon left-addon">
+          <i class="glyphicons glyphicons-building"></i>
+          <label class="sr-only" for="polo">Poste</label>
+          <input type="text" class="form-control" id="polo" placeholder="Date & heure au format jj/mm/aaaa">
+        </div>
+        <div class="form-group inner-addon left-addon">
+          <i class="glyphicons glyphicons-building"></i>
+          <label class="sr-only" for="lili">Poste</label>
+          <input type="text" class="form-control" id="lili" placeholder="Info sur l'accès à l'évènement, gratuit, payant, site internet..">
+        </div>
+
+
+        <div class="form-group">
+          <a href="#plus"><button type="submit" class="btn btn-primary">Continuer</button></a>
+        </div>
+      </form>
+
+    </div>
+
+
+
+  </div>
+</section>
+
+<section class="suiv">
+
+  <div class="container">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <img src=<%= asset_path 'caroussel_atelier.jpg' %>>
+        </div>
+        <div class="carousel-item">
+          <img src=<%= asset_path 'caroussel_esport.jpg' %>>
+        </div>
+        <div class="carousel-item">
+          <img src=<%= asset_path 'caroussel_meeting.jpg' %>>
+        </div>
+        <div class="carousel-item">
+          <img src=<%= asset_path 'caroussel_talk.jpg' %>>
+        </div>
+      </div>
+    </div>
+    <div class="text-justify">
+      <h3>Donnez vie à vos idées grâce à CodersNet</h3>
+      <p>CodersNet s'appuie sur une large communauté de spécialiste du domaine du numérique. Si vous avez une idée d'évènement, ou si vous souhaitez simplement faire la promotion de
+      votre prochaine conférence, ou atelier dans le domaine des nouvelles technologies, du jeux vidéos, ou autre, CodersNet est là pour vous aider.</p>
+    </div>
+  </div>
+
+</section>
+
+<section class="suivant">
+  <div class="container">
+
+    <h3>Finalisez votre évènement avec des informations supplémentaires</h3>
+
+    <form class="formulaire-suiv">
+      <div class="form-group">
+        <label for="exampleTextarea">Expliquez le contexte de votre évènement, quel est son but</label>
+        <textarea class="form-control" id="exampleTextarea" rows="4"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="exampleTextarea">Si des informations supplémentaires sont nécessaires telles que pour se rendre sur le lieu, ou s'il y a des condiations d'accès etc...</label>
+        <textarea class="form-control" id="exampleTextarea" rows="4"></textarea>
+      </div>
+      <div class="form-group">
+        <a href="#"><button id="plus" type="submit" class="btn btn-primary">Créer votre évènement</button></a>
+      </div>
+    </form>
+
+
+
+  </div>
+</section>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+

@@ -7,7 +7,7 @@
  <%= csrf_meta_tags %>
 </head>
 <header>
-<%= render partial: 'shared/navbar' %>
+  <%= render partial: 'shared/navbar' unless @disable_nav %>
 </header>
 <body>
 <%= yield %>

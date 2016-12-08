@@ -1,0 +1,89 @@
+<%=  stylesheet_link_tag 'creation_offre'%>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<section class="tete">
+  <div class="container">
+    <div class="section-header">
+
+      <small>Vous allez publier votre annonce sur CodersNet</small>
+      <br>
+      <br>
+      <h3>Commençons à créer votre annonce pour recruter les meilleurs talents</h3>
+
+      <form class="formulaire">
+          <div class="form-group inner-addon left-addon">
+            <i class="glyphicons glyphicons-briefcase"></i>
+            <label class="sr-only" for="poste">Poste</label>
+            <input type="text" class="form-control" id="poste" placeholder="Entreprise">
+          </div>
+          <div class="form-group inner-addon left-addon">
+            <i class="glyphicons glyphicons-building"></i>
+            <label class="sr-only" for="toto">Poste</label>
+            <input type="text" class="form-control" id="toto" placeholder="Lieux">
+          </div>
+          <div class="form-group inner-addon left-addon">
+            <i class="glyphicons glyphicons-building"></i>
+            <label class="sr-only" for="polo">Poste</label>
+            <input type="text" class="form-control" id="polo" placeholder="Intitulé du poste">
+          </div>
+          <div class="form-group inner-addon left-addon">
+            <i class="glyphicons glyphicons-building"></i>
+            <label class="sr-only" for="lili">Poste</label>
+            <input type="text" class="form-control" id="lili" placeholder="Type de contrat">
+          </div>
+
+
+          <div class="form-group">
+            <a href="#plus"><button type="submit" class="btn btn-primary">Continuer</button></a>
+          </div>
+      </form>
+
+    </div>
+
+
+
+  </div>
+</section>
+
+<section class="suiv">
+
+  <div class="container">
+    <img class="img-thumbnail" src=<%= asset_path 'geek.jpg' %>>
+    <div class="text-justify">
+      <h3>Des candidats de qualité</h3>
+      <p>Nous ciblons automatiquement les professionnels qualifiés qui correspondent aux compétences et à l’expérience indiquées dans votre annonce, par e-mail et sur CodersNet.</p>
+    </div>
+  </div>
+
+</section>
+
+<section class="suivant">
+  <div class="container">
+
+    <h3>Maintenant donnez vie à votre annonce !</h3>
+
+    <form class="formulaire-suiv">
+      <div class="form-group">
+        <label for="exampleTextarea">Renseignez vos futurs candidats sur votre entreprise : </label>
+        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="exampleTextarea">Indiquez leurs futures missions au sein de votre entreprise :</label>
+        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <a href="#"><button id="plus" type="submit" class="btn btn-primary">Créer l'annonce</button></a>
+      </div>
+    </form>
+
+
+
+  </div>
+</section>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+

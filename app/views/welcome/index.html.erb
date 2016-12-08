@@ -1,1 +1,40 @@
-<p>blablabla</p>
+        <%= stylesheet_link_tag 'welcome' %>
+         <body>
+          <div class="title"><h1>CodersNet</h1></div>
+            <div class="wrapper">
+            <div class="login is-active">
+              <div class="profile"><i class="fa fa-camera fa-2x"></i></div>
+              <div class="form-element">
+                <span><i class="fa fa-envelope"></i></span><input type="email" placeholder="Adresse Email"/>
+              </div>
+              <div class="form-element">
+                <span><i class="fa fa-lock"></i></span><input type="password" placeholder="Mot de Passe"/>
+              </div>
+              <button class="btn-login"><%= link_to 'Login', profil_profil_path %></button>
+            </div>
+            <div class="register down">
+              <div class="form-element">
+                <span><i class="fa fa-user"></i></span><input type="text" placeholder="Prénom"/>
+              </div>
+              <div class="form-element">
+                <span><i class="fa fa-user"></i></span><input type="text" placeholder="Nom"/>
+              </div>
+              <div class="form-element">
+                <span><i class="fa fa-envelope"></i></span><input type="email" placeholder="Adresse Email"/>
+              </div>
+              <div class="form-element">
+                <span><i class="fa fa-lock"></i></span><input type="password" placeholder="Mot de Passe"/>
+              </div>
+              <div class="form-element">
+                <span><i class="fa fa-lock"></i></span><input type="password" placeholder="Confirmez le mot de passe"/>
+              </div>
+              <button class="btn-register">S'inscrire</button>
+            </div>
+            <div class="login-view-toggle">
+              <div class="sign-up-toggle is-active">Pas encore de compte ? <a href="#">Inscrivez-vous!</a></div>
+              <div class="login-toggle">Déjà inscrit ? <a href="#">Login</a></div>
+            </div>
+          </div>
+         </body>
+
+

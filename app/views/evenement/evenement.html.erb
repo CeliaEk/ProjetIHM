@@ -1,0 +1,236 @@
+<%=  stylesheet_link_tag 'evenement'%>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+<div class="container-carriere">
+
+  <div class="panel panel-default">
+    <div class="panel-body">
+
+      <h3>Recherche d'évènement</h3>
+
+      <br>
+      <form class="form-inline">
+        <div class="form-group inner-addon left-addon">
+          <i class="glyphicon glyphicon-list-alt"></i>
+          <label class="sr-only" for="poste">Poste</label>
+          <input type="text" class="form-control" id="poste" placeholder="Type d'évènement">
+        </div>
+        <div class="form-group inner-addon left-addon">
+          <i class="glyphicon glyphicon-map-marker"></i>
+          <label class="sr-only" for="lieux">Lieux</label>
+          <input type="text" class="form-control" id="lieux" placeholder="Région, département, ville">
+        </div>
+        <button type="submit" class="btn btn-default">Trouver un évènement</button>
+      </form>
+
+      <br>
+
+      <a href="../new_event"> <h5>Créer un évènement</h5> </a>
+
+    </div>
+  </div>
+
+  <section class="text-justify">
+    <h4>CodersNet vous permet également de participer à des évènements à travers la France. Retrouvez une sélection taillée sur mesure rien que pour vous.<br>
+    Conférences, afterwork, ateliers, ou encore des flash business meeting, sur CodersNet vous trouverez tout ce qu'il vous faut pour affiner vos compétences et élargir votre réseau.</h4>
+
+  </section>
+
+
+  <!-- Centered Pills -->
+
+  <div id="rootwizard">
+    <ul class="nav nav-pills nav-justified">
+      <li class="active"><a href="#tab1" data-toggle="pill">Prochainement</a></li>
+      <li><a href="#tab2" data-toggle="pill">Mes évènement</a></li>
+      <li><a href="#tab3" data-toggle="pill">Préférences</a></li>
+    </ul>
+    <hr>
+    <div class="tab-content">
+      <div class="tab-pane active" id="tab1">
+
+        <div class="row">
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+              <div class="caption">
+                <span class="media-left"><img class="img-circle" src=<%= asset_path 'web.jpeg' %>  width="60" height="60"></span>
+                <h3 class="media-right media-middle">Conférence sur le web de demain</h3><br>
+                <p>Lieux : Salle polyvalente, Vitrolles 13127</p>
+                <p>Date & heure : 15/12/2016 à 17h</p>
+                <p>Organisé par : CNRS</p>
+                <p>Entrée libre, places limitées</p>
+                <p class="detail"><a href="#" class="btn btn-info" role="button">Détail</a>
+                  <a href="#" class="btn btn-info" role="button">Sauvegarder</a></p>
+                <hr>
+                <p class="small">Publiée le 07-12-2016</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+              <div class="caption">
+                <span class="media-left"><img class="img-circle" src=<%= asset_path 'esport.jpeg' %>  width="60" height="60"></span>
+                <h3 class="media-right media-middle">L'avenir de l'e-sport</h3><br>
+                <p>Lieux : CCI Grenoble 38000</p>
+                <p>Date & heure : 18/12/2016, 18-22h</p>
+                <p>Organisé par : Riot France</p>
+                <p>Entrée 10€ : <a href="https://fr.wikipedia.org/wiki/Sport_%C3%A9lectronique">www.esport-tomorrow.com</a></p>
+                <p class="detail"><a href="../vue_event" class="btn btn-info" role="button">Détail</a>
+                  <a href="#" class="btn btn-info" role="button">Sauvegarder</a></p>
+                <hr>
+                <p class="small">Publiée le 05-12-2016</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+              <div class="caption">
+                <span class="media-left"><img class="img-circle" src=<%= asset_path 'tomcat.png' %>  width="60" height="60"></span>
+                <h3 class="media-right media-middle">Server Tomcat / Apache</h3><br>
+                <p>Lieux : Amphi 4 campus Grenoble, 38000</p>
+                <p>Date & heure : 18/12/2016, 19h</p>
+                <p>Organisé par : Assystem</p>
+                <p>Entrée libre, places limitées</p>
+                <p class="detail"><a href="#" class="btn btn-info" role="button">Détail</a>
+                  <a href="#" class="btn btn-info" role="button">Sauvegarder</a></p>
+                <hr>
+                <p class="small">Publiée le 04-12-2016</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+              <div class="caption">
+                <span class="media-left"><img class="img-circle" src=<%= asset_path 'angular.jpeg' %>  width="60" height="60"></span>
+                <h3 class="media-right media-middle">Angular 2.0 quelles évoution?</h3><br>
+                <p>Lieux : Halle Mendes, Montpellier 34000</p>
+                <p>LDate & heure : 15/12/2016, 18h</p>
+                <p>Organisé par : Google France</p>
+                <p>ntrée libre, places limitées</p>
+                <p class="detail"><a href="" class="btn btn-info" role="button">Détail</a>
+                  <a href="#" class="btn btn-info" role="button">Sauvegarder</a></p>
+                <hr>
+                <p class="small">Publiée le 03-12-2016</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+              <div class="caption">
+                <span class="media-left"><img class="img-circle" src=<%= asset_path 'data.png' %>  width="60" height="60"></span>
+                <h3 class="media-right media-middle">Le métier de Data Scientist</h3><br>
+                <p>Lieux : Palais des congrès, Paris</p>
+                <p>Date & heure : 18/12/2016, 18h</p>
+                <p>Organisé par : Socitété Générale</p>
+                <p>Entrée libre, places limitées</p>
+                <p class="detail"><a href="#" class="btn btn-info" role="button">Détail</a>
+                  <a href="#" class="btn btn-info" role="button">Sauvegarder</a></p>
+                <hr>
+                <p class="small">Publiée le 04-12-2016</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="tab-pane" id="tab2">
+        <div class="row">
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+              <div class="caption">
+                <span class="media-left"><img class="img-circle" src=<%= asset_path 'web.jpeg' %>  width="60" height="60"></span>
+                <h3 class="media-right media-middle">Conférence sur le web de demain</h3><br>
+                <p>Lieux : Salle polyvalente, Vitrolles 13127</p>
+                <p>Date & heure : 15/12/2016 à 17h</p>
+                <p>Organisé par : CNRS</p>
+                <p>Entrée libre, places limitées</p>
+                <p class="detail"><a href="#" class="btn btn-info" role="button">Détail</a>
+                  <a href="#" class="btn btn-info" role="button">Supprimer</a></p>
+                <hr>
+                <p class="small">Publiée le 07-12-2016</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+              <div class="caption">
+                <span class="media-left"><img class="img-circle" src=<%= asset_path 'esport.jpeg' %>  width="60" height="60"></span>
+                <h3 class="media-right media-middle">L'avenir de l'e-sport</h3><br>
+                <p>Lieux : CCI Grenoble 38000</p>
+                <p>Date & heure : 18/12/2016, 18-22h</p>
+                <p>Organisé par : Riot France</p>
+                <p>Entrée 10€ : <a href="https://fr.wikipedia.org/wiki/Sport_%C3%A9lectronique">www.esport-tomorrow.com</a></p>
+                <p class="detail"><a href="#" class="btn btn-info" role="button">Détail</a>
+                  <a href="#" class="btn btn-info" role="button">Supprimer</a></p>
+                <hr>
+                <p class="small">Publiée le 05-12-2016</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="tab3">
+        <div class="body-pref">
+
+          <header class="panelpanel-default">
+            <div class="panel-body jumbotron text-justify">
+
+              <h3>Paramètrez vos préférences afin que nous puissons vous proposer les meilleurs évènements autour de vous.
+              </h3>
+
+            </div>
+          </header>
+
+
+          <div class="container">
+            <form>
+              <fieldset>
+                <div class="form-group ">
+                  <label for="formGroupExampleInput">Tout d'abord nous avons besoin de connaître votre mobilité : </label>
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Région, département, ville">
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput2">Quel sujet vous intéresse ?</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Jeux vidéos, développement web">
+                </div>
+
+                <div class="form-group">
+                  <label for="formGroupExampleInput2">A quel type d'événement voulez vous assister ?</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Conférence, Afterwork, Atlier, Speed recruiting..">
+                </div>
+
+
+
+                <button type="submit" class="btn btn-default btn-primary">Enregistrer</button>
+              </fieldset>
+            </form>
+          </div>
+
+
+
+
+        </div>
+
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

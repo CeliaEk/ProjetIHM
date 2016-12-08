@@ -2,6 +2,15 @@
 
 # Version of your assets, change this if you want to expire all your assets.
 Rails.application.config.assets.version = '1.0'
+Rails.application.config.assets.precompile += %w( welcome.css )
+Rails.application.config.assets.precompile += %w( myprofile.css )
+Rails.application.config.assets.precompile += %w( carriere.css )
+Rails.application.config.assets.precompile += %w( creation_offre.css )
+Rails.application.config.assets.precompile += %w( vue_offre.css )
+Rails.application.config.assets.precompile += %w( evenement.css )
+Rails.application.config.assets.precompile += %w( new_event.css )
+Rails.application.config.assets.precompile += %w( vue_event.css )
+
 
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path

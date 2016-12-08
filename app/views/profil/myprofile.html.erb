@@ -1,0 +1,174 @@
+<%= stylesheet_link_tag 'myprofile' %>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+  body{
+    padding-top:90px;
+    background-color: #e3ebee;
+  }
+
+  .media-right{
+    float:right;
+  }
+  .btn-outline-info{
+    border: 1px solid deepskyblue;
+  }
+
+  .panel {
+    box-shadow: 0 2px 0 rgba(0,0,0,0.075);
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 15px;
+  }
+
+    .date{
+      font-size:12px;
+      color:lightslategrey;;
+    }
+
+</style>
+<body>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container bootstrap snippets">
+<div class="col-md-3">
+  <div class="panel rounded shadow">
+    <div class="panel-body">
+      <div class="inner-all">
+        <ul class="list-unstyled">
+          <li class="text-center">
+            <%= image_tag "profilepic2",:class=>"img-circular"%>
+          </li>
+          <li class="text-center">
+            <h4 class="text-capitalize"><%= link_to 'John Doe', profil_myprofile_path %></h4>
+            <p class="text-muted text-capitalize">Developpeur Web</p>
+            <a href="http://www.github.com"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+          </li>
+          <li>
+          </li>
+          <li><br></li>
+          <li>
+            <div class="btn-group-vertical btn-block">
+              <a href="" class="btn btn-default"><i class="fa fa-cog pull-right"></i>Modifier le compte</a>
+              <a href="" class="btn btn-default"><i class="fa fa-sign-out pull-right"></i>Se Déconnecter</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="col-md-6">
+
+  <div class="panel panel-default">
+   <div class="panel-body">
+    <h4><i class="fa fa-file-text" aria-hidden="true"></i> Résumé</h4>
+       <p style="font-size:95%">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
+         Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
+         Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.
+         Proin porttitor,orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat.
+         Duis semper. </p>
+     <hr>
+     <h4><i class="fa fa-file-code-o" aria-hidden="true"></i> Expérience</h4>
+        <p>
+            <span class="media-right"><img src=<%= asset_path 'assystem.png' %>  width="70" height="60"></span>
+            <strong>Developpeur Java</strong><br>
+            <a href="#" >Assystem</a><br>
+            <span class="date">Mars 2014 - Aujourd'hui (2 ans 9 mois)</span>
+            <p style="font-size:95%">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
+              Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
+              Cras elementum ultrices diam.</p>
+        </p>
+      <br>
+     <br>
+     <p>
+       <span class="media-right"><img src=<%= asset_path 'bnp.jpeg'%>  width="90" height="50"></span>
+       <strong>Developpeur Java</strong><br>
+       <a href="#">BNP Paribas</a><br>
+       <span class="date">Juin 2013 - Mars 2014 (9 mois)</span>
+     <p style="font-size:95%">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
+       Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
+       Cras elementum ultrices diam.</p>
+     </p>
+     <br>
+     <br>
+     <p>
+       <span class="media-right"><img class="img-circle" src=<%= asset_path 'web.jpeg' %>  width="60" height="60"></span>
+       <strong>Developpeur Web</strong><br>
+       <a href="#">Webprod</a><br>
+       <span class="date"> Décembre 2012 - Juin 2013 (6 mois)</span>
+     <p style="font-size:95%">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
+       Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
+       Cras elementum ultrices diam.</p>
+     </p>
+
+     <hr>
+
+     <h4><i class="fa fa-code" aria-hidden="true"></i> Compétences</h4>
+     <p>HTML 5
+       <progress class="progress" value="75" max="100"></progress></p>
+     <p>
+     <p>CSS 3
+       <progress class="progress" value="70" max="100"></progress>
+     <p>
+     <p>Javascript
+       <progress class="progress" value="75" max="100"></progress>
+     <p>
+     <p>Java
+       <progress class="progress" value="100" max="100"></progress></p>
+     <p>
+     </p>
+
+     <hr>
+
+     <h4><i class="fa fa-star" aria-hidden="true"></i> Centres d'intérêts</h4>
+     <p>
+       <button type="button" class="btn btn-outline-info" disabled>UX Design</button>
+       <button type="button" class="btn btn-outline-info" disabled>Cinéma</button>
+       <button type="button" class="btn btn-outline-info" disabled>Photographie</button>
+     </p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="panel rounded shadow">
+      <div class="panel-body">
+        <p style="text-align: center">Qui a consulté votre profil ?</p>
+        <br>
+
+
+
+        <p><%= link_to profil_vinceprofil_path do %>
+              <%= image_tag "profilpic3",:class=>"img-circular2"%>
+          <% end %></p><div style="color: deepskyblue;">Vince Mach</div>
+        UX Designer
+        <br>
+        <br>
+
+
+        <p><a href="#"><%= image_tag "profilepic2",:class=>"img-circular2"%></a></p><div style="color: deepskyblue;">Steve Jobs</div>
+        Developpeur Swift
+        <br>
+        <br>
+
+
+        <p><a href="#"><%= image_tag "profilepic4",:class=>"img-circular2"%></a></p><div style="color: deepskyblue;">Lisa J.</div>
+        Developpeuse .Net
+        <br>
+        <br>
+
+        <p><a href="#"><%= image_tag "profilpic3",:class=>"img-circular2"%></a></p><div style="color: deepskyblue;">Michael Sachs</div>
+        WebDesigner
+        <br>
+
+
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>

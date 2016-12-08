@@ -1,0 +1,26 @@
+// Place all the styles related to the vue_offre controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container {
+  color: black;
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.container .icone {
+  margin: 5%;
+}
+
+.container .row {
+  padding-top: 5%;
+}
+
+.col-lg-12 {
+  text-align: center;
+}
+
+.col-lg-12 button{
+  margin: 5%;
+}
