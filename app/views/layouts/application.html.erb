@@ -13,4 +13,7 @@
 <%= yield %>
 </body>
 
+<footer>
+  <%= render partial: 'shared/footer' unless @disable_footer %>
+</footer>
 </html>
