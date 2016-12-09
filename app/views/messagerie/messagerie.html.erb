@@ -1,0 +1,316 @@
+<style>
+
+  body{
+    padding-top: 50px;
+  }
+  .container{
+    margin: 50px;
+  }
+  .left {
+    border: 1px solid black;
+    overflow-x:scroll
+  }
+  .left img{
+    margin-top: 13px;
+    margin-bottom: 5px;
+    height: 57px;
+  }
+
+  .droite {
+    height: 85%;
+    border: 1px solid black;
+  }
+  .droite .row{
+    margin-top: 5px;
+  }
+  textarea {
+    resize: none;
+  }
+  .droite img{
+    height: 5px;
+  }
+    .headBut{
+      text-align: center;
+    }
+    .container{
+      height: 100%;
+    }
+    .box {
+      height: 100%;
+    }
+
+    form {
+        margin-top: 11px;
+        margin-left: 18%;
+        margin-right: 18%;
+    }
+
+    form button{
+
+    }
+    form input{
+      width: 100%;
+    }
+</style>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container">
+  <div class="row box">
+  <div class="col-lg-4 col-xs-6 left" >
+    <div class="row headBut" >
+      <div class="col-xs-6 action">
+        <a href="#" class="small">Marquer comme lu</a>
+      </div>
+      <div class="col-xs-6 action">
+        <a href="#" class="small">Nouveau message</a>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-xs-3">
+        <img src=<%= asset_path 'bob.png' %> class="img-thumbnail" alt="profil">
+      </div>
+      <div class="col-xs-9">
+        <div class="row">
+          <div class="col-lg-9"><em>Bob</em></div>
+          <div class="col-lg-3"><small >00:23</small></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12"><p>Salut ça va ?</p></div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-xs-3">
+        <img src=<%= asset_path 'fille1.png' %> class="img-thumbnail" alt="profil">
+      </div>
+      <div class="col-xs-9">
+        <div class="row">
+          <div class="col-lg-9"><em>Emma</em></div>
+          <div class="col-lg-3"><small >00:23</small></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12"><p>Tu dors ?</p></div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-xs-3">
+        <img src=<%= asset_path 'kiki.png' %> class="img-thumbnail" alt="profil">
+      </div>
+      <div class="col-xs-9">
+        <div class="row">
+          <div class="col-lg-9"><em>Célia</em></div>
+          <div class="col-lg-3"><small >00:23</small></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12"><p>Vite la fin de ce projet ! et les vacances</p></div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row" style="background-color: cadetblue">
+      <div class="col-xs-3">
+        <img src=<%= asset_path 'fabien.jpg' %> class="img-thumbnail" alt="profil">
+      </div>
+      <div class="col-xs-9">
+        <div class="row">
+          <div class="col-lg-9"><em>Fabien</em></div>
+          <div class="col-lg-3"><small >Hier</small></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12"><p>Profite bien</p></div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-xs-3">
+        <img src=<%= asset_path 'fille2.png' %> class="img-thumbnail" alt="profil">
+      </div>
+      <div class="col-xs-9">
+        <div class="row">
+          <div class="col-lg-9"><em>Sandra</em></div>
+          <div class="col-lg-3"><small >Hier</small></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12"><p>Je suis blonde et alors ?!</p></div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-xs-3">
+        <img src=<%= asset_path 'polo.png' %> class="img-thumbnail" alt="profil">
+      </div>
+      <div class="col-xs-9">
+        <div class="row">
+          <div class="col-lg-9"><em>Polo</em></div>
+          <div class="col-lg-3"><small >Lundi</small></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12"><p>Wesh alors ?</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-8 col-xs-6 droite">
+    <div class="row">
+      <div class="col-lg-3 col-xs-3">
+        <img src=<%= asset_path 'Avengers-Agent-Coulson-icon.png' %> class="img-thumbnail" alt="profil">
+      </div>
+      <div class="col-lg-9 col-xs-9">
+        <div class="row">
+          <div class="col-lg-9 col-xs-9"><em>Sylvain</em></div>
+          <div class="col-lg-3 col-xs-3"><small >Hier</small></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-xs-12"><p>Profite bien </p></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-xs-3">
+        <img src=<%= asset_path 'fabien.jpg' %> class="img-thumbnail" alt="profil">
+      </div>
+      <div class="col-lg-9 col-xs-9">
+        <div class="row">
+          <div class="col-lg-9 col-xs-9"><em>Fabien</em></div>
+          <div class="col-lg-3 col-xs-3"><small >Hier</small></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-xs-12"><p>Allez je te laisse je vais bouger</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-xs-3">
+        <img src=<%= asset_path 'Avengers-Agent-Coulson-icon.png' %> class="img-thumbnail" alt="profil">
+      </div>
+      <div class="col-lg-9 col-xs-9">
+        <div class="row">
+          <div class="col-lg-9 col-xs-9"><em>Sylvain</em></div>
+          <div class="col-lg-3 col-xs-3"><small >Hier</small></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-xs-12"><p>je suis claqué je go dormir</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-xs-3">
+        <img src=<%= asset_path 'fabien.jpg' %> class="img-thumbnail" alt="profil">
+      </div>
+      <div class="col-lg-9 col-xs-9">
+        <div class="row">
+          <div class="col-lg-9 col-xs-9"><em>Fabien</em></div>
+          <div class="col-lg-3 col-xs-3"><small >Hier</small></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-xs-12"><p>C'est l'été ici, il fait déjà 35° !! </p></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-xs-3">
+        <img src=<%= asset_path 'Avengers-Agent-Coulson-icon.png' %> class="img-thumbnail" alt="profil">
+      </div>
+      <div class="col-lg-9 col-xs-9">
+        <div class="row">
+          <div class="col-lg-9 col-xs-9"><em>Sylvain</em></div>
+          <div class="col-lg-3 col-xs-3"><small >Hier</small></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-xs-12"><p>Du surf ? moi je me languis le ski lol</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-xs-3">
+        <img src=<%= asset_path 'fabien.jpg' %> class="img-thumbnail" alt="profil">
+      </div>
+      <div class="col-lg-9 col-xs-9">
+        <div class="row">
+          <div class="col-lg-9 col-xs-9"><em>Fabien</em></div>
+          <div class="col-lg-3 col-xs-3"><small >Hier</small></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-xs-12"><p>J'ia test le surf cet aprem c'était de la bale !</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-xs-3">
+        <img src=<%= asset_path 'Avengers-Agent-Coulson-icon.png' %> class="img-thumbnail" alt="profil">
+      </div>
+      <div class="col-lg-9 col-xs-9">
+        <div class="row">
+          <div class="col-lg-9 col-xs-9"><em>Sylvain</em></div>
+          <div class="col-lg-3 col-xs-3"><small >Hier</small></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-xs-12"><p>Tu dois bien bouger du coup :) joli road trip</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-xs-3">
+        <img src=<%= asset_path 'fabien.jpg' %> class="img-thumbnail" alt="profil">
+      </div>
+      <div class="col-lg-9 col-xs-9">
+        <div class="row">
+          <div class="col-lg-9 col-xs-9"><em>Fabien</em></div>
+          <div class="col-lg-3 col-xs-3"><small >Hier</small></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-xs-12"><p>Ouais trop bien je suis en Autralie là c'est le feu !</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-xs-3">
+        <img src=<%= asset_path 'Avengers-Agent-Coulson-icon.png' %> class="img-thumbnail" alt="profil">
+      </div>
+      <div class="col-lg-9 col-xs-9">
+        <div class="row">
+          <div class="col-lg-9 col-xs-9"><em>Sylvain</em></div>
+          <div class="col-lg-3 col-xs-3"><small >Hier</small></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-xs-12"><p>Salut mec ça va ?</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row foot">
+      <textarea class="form-control" id="exampleTextarea" rows="4" placeholder="Votre réponse.."></textarea>
+    </div>
+    <div class="row">
+      <form class="form-inline">
+        <div class="row">
+
+        <div class="col-lg-4 col-xs-4 form-group ">
+          <label class="sr-only" for="poste">Poste</label>
+          <input type="text" class="form-control" id="poste" placeholder="Ajouter un fichier">
+        </div>
+        <div class="col-lg-4 col-xs-4 form-group">
+          <label class="sr-only" for="lieux">Lieux</label>
+          <input type="text" class="form-control" id="lieux" placeholder="Photo/vidéo">
+        </div>
+
+        <div class="col-lg-4 col-xs-4 form-group ">
+          <button class="btn btn-primary">Envoyer</button>
+        </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+
+
+</div>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
